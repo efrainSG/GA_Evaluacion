@@ -12,8 +12,10 @@ namespace BLService
         public string IdTienda { get; set; }
         public string IdRegistradora { get; set; }
         public int Ticket { get; set; }
-        public DateTime HoraFecha { get; set; }
-
+        public DateTime FechaHora { get; set; }
+        public decimal Impuesto { get; set; }
+        public decimal Total { get; set; }
+        public DateTime? FechaHora_Creacion { get; set; }
 
     }
 }

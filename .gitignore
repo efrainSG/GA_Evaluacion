@@ -8,3 +8,6 @@
 /GA_Service/BLService/obj
 /GA_Service/GA_API/obj
 /GA_Service/Service/obj
+/GA_Service/BLService/bin/Debug/net6.0
+/GA_Service/GA_API/bin/Debug/net6.0
+/GA_Service/Service/bin/Debug

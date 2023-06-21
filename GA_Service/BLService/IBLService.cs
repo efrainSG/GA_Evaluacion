@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace BLService
 {
-    public interface IBLService
+    public interface IBLService<T> where T: TicketDto
     {
-        Save()
+        public string connstr { get; set; }   
+        Task<IEnumerable<T>> GetAll();
+        Task<int> Save(T dto);
     }
 }

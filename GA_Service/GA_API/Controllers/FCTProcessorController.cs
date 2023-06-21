@@ -1,3 +1,4 @@
+using BLService;
 using Microsoft.AspNetCore.Mvc;
 
 namespace GA_API.Controllers
@@ -8,16 +9,27 @@ namespace GA_API.Controllers
     {
 
         private readonly ILogger<FCTProcessorController> _logger;
+        private readonly IBLService<TicketDto> servicio;
 
-        public FCTProcessorController(ILogger<FCTProcessorController> logger)
+        public FCTProcessorController(ILogger<FCTProcessorController> logger, IBLService<TicketDto> servicio, IConfiguration config)
         {
             _logger = logger;
+            this.servicio = servicio;
+            this.servicio.connstr = config.GetConnectionString("SQLConn") ?? string.Empty;
         }
 
         [HttpPost]
-        public async Task<IActionResult> Post()
+        public async Task<IActionResult> Post([FromBody] TicketDto data)
         {
-            
+            var resultado = await servicio.Save(data);
+            return Ok(new { resultado });
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> Get()
+        {
+            var resultado = await servicio.GetAll();
+            return Ok(new { resultado });
         }
     }
 }
