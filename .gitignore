@@ -1,0 +1,10 @@
+﻿################################################################################
+# Este archivo .gitignore ha sido creado automáticamente por Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/GA_Evaluacion/v17
+/.vs
+/GA_Service/.vs
+/GA_Service/BLService/obj
+/GA_Service/GA_API/obj
+/GA_Service/Service/obj

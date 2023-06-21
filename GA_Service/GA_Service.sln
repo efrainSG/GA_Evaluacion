@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33723.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service", "Service\Service.csproj", "{67268CDE-067F-4241-BB73-197B8FF9D913}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GA_API", "GA_API\GA_API.csproj", "{72152E9D-1741-4F24-9E18-D490E3FD13DD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLService", "BLService\BLService.csproj", "{CF326F10-2FE7-4FFE-B946-93300C6C9900}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{67268CDE-067F-4241-BB73-197B8FF9D913}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67268CDE-067F-4241-BB73-197B8FF9D913}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67268CDE-067F-4241-BB73-197B8FF9D913}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67268CDE-067F-4241-BB73-197B8FF9D913}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72152E9D-1741-4F24-9E18-D490E3FD13DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72152E9D-1741-4F24-9E18-D490E3FD13DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72152E9D-1741-4F24-9E18-D490E3FD13DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72152E9D-1741-4F24-9E18-D490E3FD13DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF326F10-2FE7-4FFE-B946-93300C6C9900}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF326F10-2FE7-4FFE-B946-93300C6C9900}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF326F10-2FE7-4FFE-B946-93300C6C9900}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF326F10-2FE7-4FFE-B946-93300C6C9900}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {31DD8CF7-DCB9-4162-89BC-8BC671BF41C1}
+	EndGlobalSection
+EndGlobal
