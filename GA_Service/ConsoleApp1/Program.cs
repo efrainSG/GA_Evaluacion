@@ -16,6 +16,7 @@ namespace ConsoleApp1
         {
             StringBuilder sb = new StringBuilder();
             bool isOk = true;
+            Console.WriteLine("Iniciando...");
             try
             {
                 sb.Append($"-----{DateTime.UtcNow}-----\n");
@@ -23,6 +24,7 @@ namespace ConsoleApp1
                 {
                     Executing = true;
                     DirectoryInfo dir = new DirectoryInfo($"{path}Pendientes\\");
+
                     files = dir.EnumerateFiles().Where(x => x.Extension.ToUpper().Equals(".FCT"));
 
                     DateTime Init = DateTime.Now;
@@ -86,10 +88,21 @@ namespace ConsoleApp1
                     sw.Write(sb.ToString());
                 }
             }
+            Console.WriteLine("Terminando...");
         }
         static void Main(params string[] args)
         {
-            path = args[0];
+            path = args.Length > 0 ? args[0] : ".\\";
+            DirectoryInfo dir = new DirectoryInfo(path);
+
+            if (!dir.GetDirectories().Any(x => x.Name == "Log"))
+            {
+                dir.CreateSubdirectory("Log");
+            }
+            if (!dir.GetDirectories().Any(x => x.Name == "Procesados"))
+            {
+                dir.CreateSubdirectory("Procesados");
+            }
 
             timer = new System.Timers.Timer(60_000);
             timer.Elapsed += Timer_Elapsed;
