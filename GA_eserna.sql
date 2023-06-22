@@ -51,8 +51,8 @@ as
 begin
 	set nocount on;
 
-	declare @id_t varchar;
-	declare @id_r varchar;
+	declare @id_t varchar(255);
+	declare @id_r varchar(255);
 	declare @cuenta int;
 
 	select top 1 @id_t = Id_Tienda, @id_r = Id_Registradora from inserted;
