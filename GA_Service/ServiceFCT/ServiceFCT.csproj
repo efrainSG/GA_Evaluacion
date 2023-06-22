@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{67268CDE-067F-4241-BB73-197B8FF9D913}</ProjectGuid>
+    <ProjectGuid>{EDBBEB6F-0676-43ED-A071-DE7365C7C648}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Service</RootNamespace>
-    <AssemblyName>Service</AssemblyName>
+    <RootNamespace>ServiceFCT</RootNamespace>
+    <AssemblyName>ServiceFCT</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>Service.Program</StartupObject>
+    <StartupObject>ServiceFCT.Program</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />

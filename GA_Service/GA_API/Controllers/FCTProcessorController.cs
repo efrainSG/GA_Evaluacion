@@ -22,7 +22,10 @@ namespace GA_API.Controllers
         public async Task<IActionResult> Post([FromBody] TicketDto data)
         {
             var resultado = await servicio.Save(data);
-            return Ok(new { resultado });
+            if (resultado != 0)
+                return Ok(new { resultado });
+            else
+                return BadRequest(new { resultado });
         }
 
         [HttpGet]
