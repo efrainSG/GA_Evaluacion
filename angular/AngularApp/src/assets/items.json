@@ -1,0 +1,6 @@
+[
+    {"id":1, "name":"Item name 001", "img":"./", "description":"Description of item 001", "price": 19.32, "quantity": 2, "total": 38.64 },
+    {"id":2, "name":"Item name 002", "img":"./", "description":"Description of item 002", "price": 10.18, "quantity": 1, "total": 10.18 },
+    {"id":3, "name":"Item name 003", "img":"./", "description":"Description of item 003", "price": 59.11, "quantity": 5, "total": 295.55 },
+    {"id":4, "name":"Item name 004", "img":"./", "description":"Description of item 004", "price": 45.60, "quantity": 1, "total": 45.60 }
+]

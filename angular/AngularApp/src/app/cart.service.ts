@@ -1,25 +1,27 @@
+import {HttpClient} from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { ItemModel } from './item-model';
-import { Observable, of } from 'rxjs';
+import { Observable, catchError, of } from 'rxjs';
 import { ItemCartModel } from './item-cart-model';
 
 @Injectable({
   providedIn: 'root'
 })
 export class CartService {
-  private items: ItemCartModel[];
+  private items?: ItemCartModel[];
 
-  constructor() {
-    this.items = [
-      {id:1, name:"Item name 001", img:"./", description:"Description of item 001", price: 19.32, quantity: 1, total: 19.32 },
-      {id:2, name:"Item name 002", img:"./", description:"Description of item 002", price: 10.18, quantity: 1, total: 10.18 },
-      {id:3, name:"Item name 003", img:"./", description:"Description of item 003", price: 59.11, quantity: 1, total: 59.11 },
-      {id:4, name:"Item name 004", img:"./", description:"Description of item 004", price: 45.60, quantity: 1, total: 45.60 }
-    ];
+  constructor(private readonly httpClient: HttpClient) {
    }
 
-   getItems(): Observable<ItemCartModel[]> {
-    return of(this.items);
+   getItems(): Observable<any> {
+    const url = 'assets/items.json';
+    return this.httpClient.get<any>(url)
+    .pipe(
+      catchError((error:any) => {
+        console.error('Error al leer datos desde origen', error);
+        return [];
+      })
+    );
    }
 
    delItems(): Observable<ItemCartModel[]> {
