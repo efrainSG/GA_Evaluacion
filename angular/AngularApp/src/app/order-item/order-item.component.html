@@ -1,0 +1,32 @@
+<div class="row">
+    <div class="col-sm-1">
+        <img src="{{this.Item?.img}}" alt="" class="img-thumbnail rounded">
+        
+    </div>
+
+    <div class="col-sm-5">
+        <div class="row">
+            <div class="col-sm-12">
+                <strong>{{this.Item?.name}}</strong>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <small>{{this.Item?.description}}</small>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sm-2">
+        <button class="btn btn-secondary" (click)="onSubtract()">-</button>
+        <span>{{this.Item?.quantity}}</span>
+        <button class="btn btn-secondary"  (click)="onAdd()">+</button>
+    </div>
+    <div class="col-sm-2">
+        <button class="btn btn-secondary" (click)="onRemove()">Remove</button>
+    </div>
+    <div class="col-sm-2">
+        {{this.Item?.total | currency}}
+
+    </div>
+</div>

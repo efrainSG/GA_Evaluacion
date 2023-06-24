@@ -1,0 +1,32 @@
+<div class="row">
+    <div class="col-sm-9">
+        Subtotal
+    </div>
+    <div class="col-sm-3">
+        {{this.subtotal | currency}}
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-9">
+        Shipping fees
+    </div>
+    <div class="col-sm-3">
+        {{this.fees | currency}}
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-9">
+        Taxes
+    </div>
+    <div class="col-sm-3">
+        {{this.taxes | currency}}
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-9">
+        Total (Including taxes)
+    </div>
+    <div class="col-sm-3">
+        {{this.total | currency}}
+    </div>
+</div>
