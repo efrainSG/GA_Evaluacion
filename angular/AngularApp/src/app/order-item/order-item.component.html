@@ -18,15 +18,14 @@
     </div>
 
     <div class="col-sm-2">
-        <button class="btn btn-secondary" (click)="onSubtract()">-</button>
+        <button class="btn btn-info btn-sm" (click)="onSubtract()"><i class="fas fa-minus"></i></button>
         <span>{{this.Item?.quantity}}</span>
-        <button class="btn btn-secondary"  (click)="onAdd()">+</button>
+        <button class="btn btn-info btn-sm"  (click)="onAdd()"><i class="fas fa-plus"></i></button>
     </div>
-    <div class="col-sm-2">
-        <button class="btn btn-secondary" (click)="onRemove()">Remove</button>
-    </div>
-    <div class="col-sm-2">
+    <div class="col-sm-2 text-right">
         {{this.Item?.total | currency}}
-
+    </div>
+    <div class="col-sm-2">
+        <button class="btn btn-default" (click)="onRemove()"><i class="fas fa-trash"></i></button>
     </div>
 </div>

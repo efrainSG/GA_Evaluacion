@@ -1,32 +1,32 @@
 <div class="row">
-    <div class="col-sm-9">
+    <div class="col-sm-6">
         Subtotal
     </div>
-    <div class="col-sm-3">
+    <div class="col-sm-4 text-right">
         {{this.subtotal | currency}}
     </div>
 </div>
 <div class="row">
-    <div class="col-sm-9">
+    <div class="col-sm-6">
         Shipping fees
     </div>
-    <div class="col-sm-3">
+    <div class="col-sm-4 text-right">
         {{this.fees | currency}}
     </div>
 </div>
 <div class="row">
-    <div class="col-sm-9">
+    <div class="col-sm-6">
         Taxes
     </div>
-    <div class="col-sm-3">
+    <div class="col-sm-4 text-right">
         {{this.taxes | currency}}
     </div>
 </div>
 <div class="row">
-    <div class="col-sm-9">
-        Total (Including taxes)
+    <div class="col-sm-6">
+        <strong>Total (Including taxes)</strong>
     </div>
-    <div class="col-sm-3">
-        {{this.total | currency}}
+    <div class="col-sm-4 text-right">
+        <strong>{{this.total | currency}}</strong>
     </div>
 </div>
