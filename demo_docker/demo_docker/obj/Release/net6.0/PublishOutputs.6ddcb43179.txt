@@ -1,5 +1,0 @@
-C:\Repos\GA_Evaluacion\demo_docker\demo_docker\bin\Release\net6.0\publish\demo_docker.exe
-C:\Repos\GA_Evaluacion\demo_docker\demo_docker\bin\Release\net6.0\publish\demo_docker.dll
-C:\Repos\GA_Evaluacion\demo_docker\demo_docker\bin\Release\net6.0\publish\demo_docker.deps.json
-C:\Repos\GA_Evaluacion\demo_docker\demo_docker\bin\Release\net6.0\publish\demo_docker.runtimeconfig.json
-C:\Repos\GA_Evaluacion\demo_docker\demo_docker\bin\Release\net6.0\publish\demo_docker.pdb
