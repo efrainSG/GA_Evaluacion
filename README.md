@@ -1,6 +1,6 @@
 # GA_Evaluacion
 
-La solución está organizada en tres proyectos: **BLService**, **GA_API** y **ConsoleApp1**.
+La solución está organizada en tres proyectos: **BLService**, **GA_API** y **ConsoleApp1**. Adicionalmente incluye el script de SQL **GA_eserna.sql** que genera la base de datos y sus objetos
 
 ## BLService
 
