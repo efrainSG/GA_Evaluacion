@@ -12,7 +12,6 @@ export class AppComponent {
   feesPercentage: number = 0.024;
 
   onUpdateSubTotal(data:any){
-    console.log("data recibido en APP component", data);
     this.subtotal = data.subtotal;
   }
 }

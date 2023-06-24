@@ -22,6 +22,7 @@ export class OrderSummaryComponent implements OnInit  {
   ngOnInit(): void {
     this.servicio.getItems().subscribe(o => {
       this.items = o;
+      console.log(o);
       this.update();
     });
   }

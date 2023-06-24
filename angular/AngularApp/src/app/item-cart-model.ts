@@ -3,7 +3,9 @@ export interface ItemCartModel {
     img:string;
     name:string;
     description:string;
-    quantity?:number;
+    quantity:number;
     price:number;
-    total?:number;
+    tax:number;
+    fee:number;
+    total:number;
 }
